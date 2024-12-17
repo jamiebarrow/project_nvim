@@ -10,7 +10,6 @@ vim.opt.relativenumber = true
 
 -- Spacing
 vim.opt.shiftwidth = 2
-vim.opt.tabstop = 2
 
 -- Show special characters
 vim.opt.list = true
@@ -27,7 +26,6 @@ vim.opt.clipboard = "unnamedplus"
 vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>")
 vim.keymap.set("n", "<space>x", ":.lua<CR>")
 vim.keymap.set("v", "<space>x", ":lua<CR>")
-
 
 -- Highlight when yanking (copying) text.
 --  Try it with `yap` in normal mode.
