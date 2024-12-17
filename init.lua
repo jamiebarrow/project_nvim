@@ -27,6 +27,19 @@ vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>")
 vim.keymap.set("n", "<space>x", ":.lua<CR>")
 vim.keymap.set("v", "<space>x", ":lua<CR>")
 
+-- QuickFix keybindings
+vim.keymap.set("n", "<M-j>", "<cmd>cnext<CR>")
+vim.keymap.set("n", "<M-k>", "<cmd>cprev<CR>")
+vim.keymap.set("n", "<M-l>", "<cmd>copen<CR>")
+vim.keymap.set("n", "<M-h>", "<cmd>cclose<CR>")
+vim.keymap.set("n", "<Esc>", "<cmd>cclose<CR>")
+
+-- These are in nightly, but not yet current version
+vim.keymap.set('n', 'grn', vim.lsp.buf.rename)
+vim.keymap.set('n', 'gra', vim.lsp.buf.code_action)
+vim.keymap.set('n', 'grr', vim.lsp.buf.references)
+vim.keymap.set('i', '<C-s>', vim.lsp.buf.signature_help)
+
 -- Highlight when yanking (copying) text.
 --  Try it with `yap` in normal mode.
 --  See `:help vim.highlight.on_yank()`
