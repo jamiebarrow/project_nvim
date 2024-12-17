@@ -8,6 +8,10 @@ require('config.lazy')
 vim.opt.number = true
 vim.opt.relativenumber = true
 
+-- Spacing
+vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
+
 -- Show special characters
 vim.opt.list = true
 vim.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
@@ -16,6 +20,8 @@ vim.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 vim.opt.hlsearch = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
+-- Paste/put from system clipboard
+vim.opt.clipboard = "unnamedplus"
 
 -- Allow executing of whole file or selected line in a saved lua file.
 vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>")
