@@ -2,7 +2,8 @@
 
 This repo contains my nvim configs and resources.
 
-Currently it will follow the [Advent of Neovim playlist][1] on YouTube by [TJ DeVries][2].
+Currently it will follow the [Advent of Neovim playlist][1] on YouTube by [TJ DeVries][2],
+as well as use some configs likely from other resources such as [kickstart.nvim][3].
 
 Since I am on Windows, I set this up using a junction point which is like a hard link to the repo under %LOCALAPPDATA%\nvim
 
@@ -12,3 +13,4 @@ mklink /J %LOCALAPPDATA%\nvim REPO_PATH
 
 [1]: https://www.youtube.com/playlist?list=PLep05UYkc6wTyBe7kPjQFWVXTlhKeQejM
 [2]: https://www.youtube.com/@teej_dv
+[3]: https://github.com/nvim-lua/kickstart.nvim

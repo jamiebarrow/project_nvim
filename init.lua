@@ -1,5 +1,22 @@
 print("jamiebarrow")
 
+-- lazy.nvim
+require('config.lazy')
+
+
+-- Line numbers
+vim.opt.number = true
+vim.opt.relativenumber = true
+
+-- Show special characters
+vim.opt.list = true
+vim.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+
+-- Set highlight on search, but clear on pressing <Esc> in normal mode
+vim.opt.hlsearch = true
+vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
+
+
 -- Allow executing of whole file or selected line in a saved lua file.
 vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>")
 vim.keymap.set("n", "<space>x", ":.lua<CR>")
