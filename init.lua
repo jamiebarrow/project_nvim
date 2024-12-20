@@ -51,6 +51,10 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+
+-- In terminal mode, use ESC+ESC to get out of terminal mode
+vim.keymap.set("t", "<esc><esc>", "<c-\\><c-n>")
+
 -- Customize vim terminal
 vim.api.nvim_create_autocmd('TermOpen', {
   group = vim.api.nvim_create_augroup('jamiebarrow-term-open', { clear = true }),
@@ -66,3 +70,5 @@ vim.keymap.set("n", "<leader>st", function()
   vim.cmd.wincmd("J")
   vim.api.nvim_win_set_height(0, 5)
 end)
+
+vim.opt.shell = '"C:/Program Files/Git/bin/bash.exe"'
