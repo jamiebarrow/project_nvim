@@ -3,7 +3,6 @@ print("jamiebarrow")
 -- lazy.nvim
 require('config.lazy')
 
-
 -- Line numbers
 vim.opt.number = true
 vim.opt.relativenumber = true
@@ -50,7 +49,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     vim.highlight.on_yank()
   end,
 })
-
 
 -- In terminal mode, use ESC+ESC to get out of terminal mode
 vim.keymap.set("t", "<esc><esc>", "<c-\\><c-n>")
