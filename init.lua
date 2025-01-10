@@ -22,9 +22,9 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 vim.opt.clipboard = "unnamedplus"
 
 -- Allow executing of whole file or selected line in a saved lua file.
-vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>")
-vim.keymap.set("n", "<space>x", ":.lua<CR>")
-vim.keymap.set("v", "<space>x", ":lua<CR>")
+vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>", { desc = "Run current lua file" })
+vim.keymap.set("n", "<space>x", ":.lua<CR>", { desc = "Run current line as lua" })
+vim.keymap.set("v", "<space>x", ":lua<CR>", { desc = "Run selected as lua" })
 
 -- QuickFix keybindings
 vim.keymap.set("n", "<M-j>", "<cmd>cnext<CR>")
